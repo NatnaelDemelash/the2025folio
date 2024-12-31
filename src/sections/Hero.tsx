@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 
 const Hero: FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center mt-10 text-center px-4 sm:px-6 md:px-8">
+    <section className="flex flex-col min-h-screen items-center justify-center mt-10 text-center px-4 sm:px-6 md:px-8">
       {/* Avatar */}
       <div className="w-24 h-24 sm:w-36 sm:h-36 rounded-full overflow-hidden shadow-md mb-6">
         <Image
