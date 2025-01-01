@@ -11,16 +11,12 @@ const navItems = [
     href: "#intro",
   },
   {
-    label: "Selected Works",
+    label: "Projects",
     href: "#projects",
   },
   {
-    label: "Testimonials",
-    href: "#testimonials",
-  },
-  {
-    label: "FAQs",
-    href: "#faqs",
+    label: "Tech Stacks",
+    href: "#stacks",
   },
   {
     label: "Contact",
@@ -32,6 +28,7 @@ const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [topLineScope, topLineAnimate] = useAnimate();
   const [bottomLineScope, bottomLineAnimate] = useAnimate();
+  const [navScope, navAnimate] = useAnimate();
 
   useEffect(() => {
     if (isOpen) {
@@ -64,6 +61,16 @@ const Header: FC = () => {
           },
         ],
       ]);
+
+      navAnimate(
+        navScope.current,
+        {
+          height: "100%",
+        },
+        {
+          duration: 0.7,
+        }
+      );
     } else {
       topLineAnimate([
         [
@@ -93,6 +100,8 @@ const Header: FC = () => {
           },
         ],
       ]);
+
+      navAnimate(navScope.current, { height: 0 });
     }
   }, [
     isOpen,
@@ -100,10 +109,44 @@ const Header: FC = () => {
     topLineScope,
     bottomLineAnimate,
     bottomLineScope,
+    navAnimate,
+    navScope,
   ]);
 
   return (
     <header>
+      <div
+        className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-stone-900"
+        ref={navScope}
+      >
+        <nav className="flex flex-col mt-24">
+          {navItems.map(({ label, href }) => (
+            <a
+              href={href}
+              key={label}
+              className="text-stone-200 border-t border-stone-800 last:border-b py-8"
+            >
+              <div className="container !max-w-full flex justify-between items-center">
+                <span className="text-3xl">{label}</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
+            </a>
+          ))}
+        </nav>
+      </div>
       <div className="fixed top-0 left-0 w-full backdrop-blur-md mix-blend-difference">
         <div className="container !max-w-full">
           <div className="flex justify-between items-center h-20 px-8 md:px-12 lg:px-24">
