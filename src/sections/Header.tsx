@@ -113,6 +113,19 @@ const Header: FC = () => {
     navScope,
   ]);
 
+  const handleClickMobileNavItem = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const url = new URL(e.currentTarget.href);
+    const hash = url.hash;
+
+    const target = document.querySelector(hash);
+
+    if (!target) return;
+    target.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header>
       <div
@@ -124,10 +137,13 @@ const Header: FC = () => {
             <a
               href={href}
               key={label}
-              className="text-stone-200 border-t border-stone-800 last:border-b py-8"
+              className="text-stone-200 border-t border-stone-800 last:border-b py-8 group/nav-item relative isolate"
+              onClick={handleClickMobileNavItem}
             >
               <div className="container !max-w-full flex justify-between items-center">
-                <span className="text-3xl">{label}</span>
+                <span className="text-3xl group-hover/nav-item:pl-4 transition-all duration-500">
+                  {label}
+                </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -143,6 +159,7 @@ const Header: FC = () => {
                   />
                 </svg>
               </div>
+              <div className="absolute bg-stone-800 w-full h-0 group-hover/nav-item:h-full transition-all bottom-0 duration-500 -z-10"></div>
             </a>
           ))}
         </nav>
