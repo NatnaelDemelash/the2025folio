@@ -202,7 +202,7 @@ const Header: FC = () => {
                   />
                 </svg>
               </div>
-              <Button variant="primary" className="hidden md:block">
+              <Button variant="primary" className="hidden md:inline-block">
                 Contact Me
               </Button>
             </div>

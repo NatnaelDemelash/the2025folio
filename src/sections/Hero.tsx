@@ -26,7 +26,7 @@ const Hero: FC = () => {
       </h1>
 
       {/* Main Heading */}
-      <h2 className="text-center max-w-3xl sm:max-w-4xl px-4 sm:px-8 md:px-12 text-2xl sm:text-4xl md:text-6xl font-medium text-gray-900 leading-relaxed sm:leading-loose mb-4 capitalize">
+      <h2 className="text-center max-w-3xl sm:max-w-4xl px-4 sm:px-8 md:px-12 text-2xl sm:text-4xl md:text-6xl font-medium text-gray-900  sm:leading-normal mb-4 capitalize">
         Building modern web applications with creativity and precision.
       </h2>
 
