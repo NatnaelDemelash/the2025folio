@@ -127,7 +127,7 @@ const Header: FC = () => {
   };
 
   return (
-    <header>
+    <header className="z-50">
       <div
         className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-stone-900"
         ref={navScope}
@@ -164,7 +164,7 @@ const Header: FC = () => {
           ))}
         </nav>
       </div>
-      <div className="fixed top-0 left-0 w-full backdrop-blur-md mix-blend-difference">
+      <div className="fixed top-0 left-0 w-full backdrop-blur-md mix-blend-difference ">
         <div className="container !max-w-full">
           <div className="flex justify-between items-center h-20 px-8 md:px-12 lg:px-24">
             <div>
