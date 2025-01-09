@@ -1,36 +1,68 @@
-import { FC } from "react";
-import image1 from "@/assets/images/project-1.jpg";
-import image2 from "@/assets/images/project-2.jpg";
-import image3 from "@/assets/images/project-3.jpg";
-import image4 from "@/assets/images/project-4.jpg";
-import image5 from "@/assets/images/project-5.jpg";
+import React from "react";
+import ProjectCard from "@/components/ProjectCard";
 
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+import Project1 from "@/assets/images/Project 1.png";
+import Project2 from "@/assets/images/Project 2.png";
+import Project3 from "@/assets/images/Project 3.png";
+import Project4 from "@/assets/images/Project 4.png";
+
 const projects = [
   {
-    name: "Artisan Brew Co.",
-    image: image1,
+    title: "E-Commerce Website",
+    description:
+      "Developed a fully functional e-commerce platform using React and Node.js, complete with user authentication.",
+    tags: ["React", "Node.js"],
+    imageUrl: Project1,
+    projectLink: "#",
   },
   {
-    name: "Wavelength Studios",
-    image: image2,
+    title: "Portfolio Website",
+    description:
+      "Designed and built a sleek personal portfolio showcasing a photographer’s skills, projects, and achievements.",
+    tags: ["UX/UI Design", "React", "Node.js"],
+    imageUrl: Project2,
+    projectLink: "#",
   },
   {
-    name: "Nova Fitness",
-    image: image3,
+    title: "Jewelry Website",
+    description:
+      "Created a dynamic Jewelry Website using React for the frontend and Node.js for the backend.",
+    tags: ["Prototypes", "React", "Node.js"],
+    imageUrl: Project3,
+    projectLink: "#",
   },
   {
-    name: "Urban Plates",
-    image: image4,
-  },
-  {
-    name: "Bloom Botanicals",
-    image: image5,
+    title: "Restaurant Website",
+    description:
+      "Crafted a responsive website for a local restaurant, emphasizing user-friendly navigation and enticing visuals.",
+    tags: ["React", "Node.js"],
+    imageUrl: Project4,
+    projectLink: "#",
   },
 ];
 
-const Projects: FC = () => {
-  return <div>Projects</div>;
+const Project: React.FC = () => {
+  return (
+    <section className="py-12 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">
+          My Recent Work
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              imageUrl={project.imageUrl}
+              projectLink={project.projectLink}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
-export default Projects;
+export default Project;

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Jost, Quicksand } from "next/font/google";
+import { Quicksand } from "next/font/google";
 
-const jost_init = Jost({
-  subsets: ["latin"],
-  weight: ["100", "400", "500"],
-  variable: "--font-jost",
-});
+// const jost_init = Jost({
+//   subsets: ["latin"],
+//   weight: ["100", "400", "500"],
+//   variable: "--font-jost",
+// });
 
 const quicksand = Quicksand({
   subsets: ["latin"],
