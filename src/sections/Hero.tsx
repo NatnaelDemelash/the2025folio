@@ -4,6 +4,8 @@ import heroImage from "@/assets/images/hero-image.jpg";
 import profile from "@/assets/images/profile.jpeg";
 import Image from "next/image";
 import Button from "@/components/Button";
+import { Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 const Hero: FC = () => {
   return (
@@ -38,11 +40,9 @@ const Hero: FC = () => {
         experiences.
       </p>
 
-      {/* Button */}
-      {/* <button className="px-4 sm:px-6 py-2 sm:py-3 bg-black text-white text-sm sm:text-base md:text-lg font-medium rounded-md shadow hover:bg-gray-800 transition">
+      <Button variant="primary" href="#contact">
         Connect with me
-      </button> */}
-      <Button variant="primary">Connect with me</Button>
+      </Button>
     </section>
   );
 };

@@ -32,20 +32,6 @@ const Header: FC = () => {
                 </div>
               </div>
 
-              {/* Tech Stacks */}
-              <div className="relative group">
-                <a
-                  href="#stacks"
-                  className="flex items-center justify-center w-10 h-10 text-white transition"
-                  aria-label="About"
-                >
-                  <Bolt size={25} />
-                </a>
-                <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 whitespace-nowrap px-3 py-1 text-sm text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
-                  Tech Stacks
-                </div>
-              </div>
-
               {/* Projects */}
               <div className="relative group">
                 <a
@@ -57,6 +43,20 @@ const Header: FC = () => {
                 </a>
                 <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 whitespace-nowrap px-3 py-1 text-sm text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
                   Projects
+                </div>
+              </div>
+
+              {/* Intro */}
+              <div className="relative group">
+                <a
+                  href="#intro"
+                  className="flex items-center justify-center w-10 h-10 text-white transition"
+                  aria-label="About"
+                >
+                  <Bolt size={25} />
+                </a>
+                <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 whitespace-nowrap px-3 py-1 text-sm text-white bg-gray-900 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                  More Me
                 </div>
               </div>
 

@@ -1,24 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Quicksand } from "next/font/google";
+import { Jost } from "next/font/google";
 
-// const jost_init = Jost({
-//   subsets: ["latin"],
-//   weight: ["100", "400", "500"],
-//   variable: "--font-jost",
-// });
-
-const quicksand = Quicksand({
+const jost_init = Jost({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["100", "400", "500"],
   variable: "--font-jost",
 });
 
-// const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Minimal Single Page Portfolio",
+  title: "Natnael Demelash",
   description: "Created by Nati Demelash",
+  icons: {
+    icon: "/favicon.ico", // Automatically includes the favicon
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>{children}</body>
+      <body className={jost_init.variable}>{children}</body>
     </html>
   );
 }

@@ -1,6 +1,7 @@
 import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
+import Intro from "@/sections/Intro";
 import Project from "@/sections/Projects";
 import TechStackSlider from "@/sections/TechStackSlider";
 
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero />
       <TechStackSlider />
       <Project />
-      {/* <Intro /> */}
+      <Intro />
       <Footer />
     </>
   );

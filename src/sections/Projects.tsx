@@ -8,42 +8,42 @@ import Project4 from "@/assets/images/Project 4.png";
 
 const projects = [
   {
-    title: "E-Commerce Website",
+    title: "Omni Food",
     description:
-      "Developed a fully functional e-commerce platform using React and Node.js, complete with user authentication.",
-    tags: ["React", "Node.js"],
+      "An AI based tech company which majorly focuses on consumer well-being through a healthy diet.",
+    tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: Project1,
-    projectLink: "#",
+    projectLink: "loquacious-haupia-108385.netlify.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Pizzeria",
     description:
-      "Designed and built a sleek personal portfolio showcasing a photographer’s skills, projects, and achievements.",
-    tags: ["UX/UI Design", "React", "Node.js"],
+      "Designed and developed a responsive website for a local pizza shop, with a focus on user-friendly navigation and visual appeal.",
+    tags: ["UX/UI Design", "JavaScript"],
     imageUrl: Project2,
-    projectLink: "#",
+    projectLink: "pizzeria101.netlify.app/",
   },
   {
-    title: "Jewelry Website",
+    title: "Aurora_Aisel Shop",
     description:
-      "Created a dynamic Jewelry Website using React for the frontend and Node.js for the backend.",
-    tags: ["Prototypes", "React", "Node.js"],
+      "Designed and developed a fully functional e-commerce website for a local clothing brand, with a focus on user-friendly navigation",
+    tags: ["React", "JavaScript"],
     imageUrl: Project3,
-    projectLink: "#",
+    projectLink: "aurora-aisel-shop.vercel.app",
   },
   {
-    title: "Restaurant Website",
+    title: "Puluk Travel",
     description:
-      "Crafted a responsive website for a local restaurant, emphasizing user-friendly navigation and enticing visuals.",
-    tags: ["React", "Node.js"],
+      " Developed a fully functional travel website for a local tourism company.",
+    tags: ["React", "Typescript"],
     imageUrl: Project4,
-    projectLink: "#",
+    projectLink: "puluk-travel.vercel.app",
   },
 ];
 
 const Project: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-gray-50" id="projects">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           My Recent Work
