@@ -8,7 +8,7 @@ const Intro: FC = () => {
     >
       <div className="max-w-3xl text-center">
         <h1 className="text-4xl md:text-5xl text-gray-800 leading-[1] md:leading-[1.28]">
-          <span className="text-4xl md:text-5xl">👋</span> I'm{" "}
+          <span className="text-4xl md:text-5xl">👋</span> I&apos;m{" "}
           <span className="text-purple-500 font-bold underline">
             {" "}
             a Front End Developer
