@@ -13,7 +13,7 @@ const projects = [
       "An AI based tech company which majorly focuses on consumer well-being through a healthy diet.",
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: Project1,
-    projectLink: "loquacious-haupia-108385.netlify.app/",
+    projectLink: "https://loquacious-haupia-108385.netlify.app/", // Added https://
   },
   {
     title: "Pizzeria",
@@ -21,7 +21,7 @@ const projects = [
       "Designed and developed a responsive website for a local pizza shop, with a focus on user-friendly navigation and visual appeal.",
     tags: ["UX/UI Design", "JavaScript"],
     imageUrl: Project2,
-    projectLink: "pizzeria101.netlify.app/",
+    projectLink: "https://pizzeria101.netlify.app/", // Added https://
   },
   {
     title: "Aurora_Aisel Shop",
@@ -29,7 +29,7 @@ const projects = [
       "Designed and developed a fully functional e-commerce website for a local clothing brand, with a focus on user-friendly navigation",
     tags: ["React", "JavaScript"],
     imageUrl: Project3,
-    projectLink: "aurora-aisel-shop.vercel.app",
+    projectLink: "https://aurora-aisel-shop.vercel.app", // Added https://
   },
   {
     title: "Puluk Travel",
@@ -37,7 +37,7 @@ const projects = [
       " Developed a fully functional travel website for a local tourism company.",
     tags: ["React", "Typescript"],
     imageUrl: Project4,
-    projectLink: "puluk-travel.vercel.app",
+    projectLink: "https://puluk-travel.vercel.app", // Added https://
   },
 ];
 
