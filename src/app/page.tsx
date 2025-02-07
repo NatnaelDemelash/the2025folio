@@ -1,3 +1,4 @@
+import Experience from "@/sections/Experience";
 import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
       <TechStackSlider />
       <Project />
       <Intro />
+      <Experience />
       <Footer />
     </>
   );
