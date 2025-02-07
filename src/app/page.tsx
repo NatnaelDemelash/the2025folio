@@ -14,6 +14,7 @@ export default function Home() {
       <TechStackSlider />
       <Project />
       <Intro />
+
       <Experience />
       <Footer />
     </>

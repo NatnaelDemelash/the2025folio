@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -22,17 +21,18 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className="max-w-4xl mx-auto p-8">
+    <div className="max-w-4xl mx-auto p-8 relative bg-orange">
       <h2 className="text-4xl font-bold text-center mb-10 text-gray-900">
         Experience
       </h2>
-      <div className="space-y-8">
+      <div className="relative border-l-4 border-blue-400 rounded-md pl-6 space-y-8">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
-            className="bg-white shadow-lg p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all"
+            className="bg-white shadow-lg p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all relative"
             whileHover={{ scale: 1.02 }}
           >
+            <div className="absolute -left-7 w-6 h-6 bg-blue-400 rounded-full border-4 border-white"></div>
             <div className="flex justify-between items-center">
               <h3 className="text-2xl font-semibold text-gray-800">
                 {exp.role} - {exp.company}
