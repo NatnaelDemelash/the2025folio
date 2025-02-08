@@ -1,7 +1,6 @@
 import { FC } from "react";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 
-import profile from "@/assets/images/profile.jpeg";
 import Image from "next/image";
 import Button from "@/components/Button";
 

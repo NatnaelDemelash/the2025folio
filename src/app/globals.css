@@ -6,6 +6,10 @@
   --font-jost: "Jost", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-jost);
   background-color: #f2f2f2;

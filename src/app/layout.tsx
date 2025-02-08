@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Natnael Demelash",
   description: "Created by Nati Demelash",
   icons: {
-    icon: "/stack.png", // Automatically includes the favicon
+    icon: "/favicon.png", // Automatically includes the favicon
   },
 };
 
