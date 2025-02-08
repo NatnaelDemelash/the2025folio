@@ -11,9 +11,11 @@ const Hero: FC = () => {
       {/* Avatar */}
       <div className="w-24 h-24 sm:w-36 sm:h-36 rounded-full overflow-hidden shadow-md mb-6 mt-3">
         <Image
-          src={profile}
-          alt="Avatar"
-          className="w-full h-full object-cover"
+          src="/images/profile.jpeg"
+          alt="Profile Picture"
+          width={200}
+          height={200}
+          className="rounded-full"
         />
       </div>
 

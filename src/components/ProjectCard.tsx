@@ -1,11 +1,11 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 type ProjectCardProps = {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: StaticImageData;
+  imageUrl: string;
   projectLink: string;
 };
 
@@ -17,14 +17,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectLink,
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:animate-shake">
       <div className="relative w-full h-52">
         <Image
           src={imageUrl}
           alt={title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover"
+          width={600}
+          height={400}
+          className="rounded-t-lg"
         />
       </div>
       <div className="p-4">

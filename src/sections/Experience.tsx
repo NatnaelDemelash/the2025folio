@@ -8,7 +8,7 @@ const experiences = [
     role: "Software Engineer",
     company: "GoodayOn",
     description: `Contributed to the development of web applications using JavaScript, Vue.js, and React.js. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Vue", "Tailwind", "React", "Firebase"],
+    technologies: ["Vue", "Tailwind", "React", "Firebase", "Google Cloud"],
   },
   {
     year: "2021 - 2023",
@@ -22,9 +22,7 @@ const experiences = [
 export default function Experience() {
   return (
     <div className="max-w-4xl mx-auto p-8 relative bg-orange">
-      <h2 className="text-4xl font-bold text-center mb-10 text-gray-900">
-        Experience
-      </h2>
+      <h2 className="text-xl font-bold mb-10 text-blue-500">Experience</h2>
       <div className="relative border-l-4 border-blue-400 rounded-md pl-6 space-y-8">
         {experiences.map((exp, index) => (
           <motion.div
@@ -35,7 +33,7 @@ export default function Experience() {
             <div className="absolute -left-7 w-6 h-6 bg-blue-400 rounded-full border-4 border-white"></div>
             <div className="flex justify-between items-center">
               <h3 className="text-2xl font-semibold text-gray-800">
-                {exp.role} - {exp.company}
+                {exp.role}
               </h3>
               <span className="text-gray-500 font-medium">{exp.year}</span>
             </div>
